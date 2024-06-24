@@ -8,25 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		46B257012C2A020A00E05D6D /* PennySaverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257002C2A020A00E05D6D /* PennySaverApp.swift */; };
-		46B257032C2A020A00E05D6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257022C2A020A00E05D6D /* ContentView.swift */; };
-		46B257052C2A020A00E05D6D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257042C2A020A00E05D6D /* Item.swift */; };
 		46B257072C2A020F00E05D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B257062C2A020F00E05D6D /* Assets.xcassets */; };
 		46B2570A2C2A020F00E05D6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B257092C2A020F00E05D6D /* Preview Assets.xcassets */; };
 		46B257142C2A03FA00E05D6D /* IntroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257132C2A03FA00E05D6D /* IntroScreen.swift */; };
 		46B257172C2A05CC00E05D6D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257162C2A05CB00E05D6D /* Constants.swift */; };
 		46B257192C2A096F00E05D6D /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257182C2A096F00E05D6D /* Tab.swift */; };
+		46B2571B2C2A0AC500E05D6D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B2571A2C2A0AC500E05D6D /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46B256FD2C2A020A00E05D6D /* PennySaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PennySaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B257002C2A020A00E05D6D /* PennySaverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennySaverApp.swift; sourceTree = "<group>"; };
-		46B257022C2A020A00E05D6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		46B257042C2A020A00E05D6D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		46B257062C2A020F00E05D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46B257092C2A020F00E05D6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		46B257132C2A03FA00E05D6D /* IntroScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScreen.swift; sourceTree = "<group>"; };
 		46B257162C2A05CB00E05D6D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		46B257182C2A096F00E05D6D /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		46B2571A2C2A0AC500E05D6D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +57,10 @@
 		46B256FF2C2A020A00E05D6D /* PennySaver */ = {
 			isa = PBXGroup;
 			children = (
+				46B257002C2A020A00E05D6D /* PennySaverApp.swift */,
 				46B257152C2A05AC00E05D6D /* Helpers */,
 				46B257122C2A03DF00E05D6D /* Model */,
 				46B257112C2A03D700E05D6D /* View */,
-				46B257002C2A020A00E05D6D /* PennySaverApp.swift */,
-				46B257022C2A020A00E05D6D /* ContentView.swift */,
-				46B257042C2A020A00E05D6D /* Item.swift */,
 				46B257062C2A020F00E05D6D /* Assets.xcassets */,
 				46B257082C2A020F00E05D6D /* Preview Content */,
 			);
@@ -83,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				46B257132C2A03FA00E05D6D /* IntroScreen.swift */,
+				46B2571A2C2A0AC500E05D6D /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,9 +172,8 @@
 			files = (
 				46B257172C2A05CC00E05D6D /* Constants.swift in Sources */,
 				46B257142C2A03FA00E05D6D /* IntroScreen.swift in Sources */,
-				46B257032C2A020A00E05D6D /* ContentView.swift in Sources */,
 				46B257192C2A096F00E05D6D /* Tab.swift in Sources */,
-				46B257052C2A020A00E05D6D /* Item.swift in Sources */,
+				46B2571B2C2A0AC500E05D6D /* HomeView.swift in Sources */,
 				46B257012C2A020A00E05D6D /* PennySaverApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
