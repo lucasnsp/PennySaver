@@ -28,4 +28,10 @@ extension View {
         return .zero
     }
 
+    func format(date: Date, format: String) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = format
+        return formatter.string(from: date)
+    }
+
 }
