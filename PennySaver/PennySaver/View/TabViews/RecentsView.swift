@@ -30,12 +30,14 @@ struct RecentsView: View {
                             .hSpacing(.leading)
 
                             // Card View
+                            CardView(income: 2039.50, expense: 4098.32)
                         } header: {
                             HeaderView(size)
                         }
                     }
                     .padding(15)
                 }
+                .background(.gray.opacity(0.15))
             }
         }
     }

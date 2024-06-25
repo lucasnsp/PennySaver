@@ -16,6 +16,7 @@
 		46017C882C2A1816006FF070 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C872C2A1816006FF070 /* SettingsView.swift */; };
 		46017C8A2C2A1F46006FF070 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C892C2A1F46006FF070 /* View+Extensions.swift */; };
 		46017C8C2C2B78A4006FF070 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C8B2C2B78A4006FF070 /* Date+Extensions.swift */; };
+		46017C8F2C2B7B0E006FF070 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C8E2C2B7B0D006FF070 /* CardView.swift */; };
 		46B257012C2A020A00E05D6D /* PennySaverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257002C2A020A00E05D6D /* PennySaverApp.swift */; };
 		46B257072C2A020F00E05D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B257062C2A020F00E05D6D /* Assets.xcassets */; };
 		46B2570A2C2A020F00E05D6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B257092C2A020F00E05D6D /* Preview Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		46017C872C2A1816006FF070 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		46017C892C2A1F46006FF070 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		46017C8B2C2B78A4006FF070 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		46017C8E2C2B7B0D006FF070 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		46B256FD2C2A020A00E05D6D /* PennySaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PennySaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B257002C2A020A00E05D6D /* PennySaverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennySaverApp.swift; sourceTree = "<group>"; };
 		46B257062C2A020F00E05D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 				46B257132C2A03FA00E05D6D /* IntroScreen.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		46017C8D2C2B7AF3006FF070 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				46017C8E2C2B7B0D006FF070 /* CardView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		46B256F42C2A020A00E05D6D = {
@@ -116,6 +126,7 @@
 		46B257112C2A03D700E05D6D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				46017C8D2C2B7AF3006FF070 /* Helpers */,
 				46017C802C2A17E1006FF070 /* Onboarding */,
 				46017C7F2C2A1785006FF070 /* TabViews */,
 			);
@@ -217,6 +228,7 @@
 				46017C822C2A17F6006FF070 /* RecentsView.swift in Sources */,
 				46017C7C2C2A14FA006FF070 /* Transaction.swift in Sources */,
 				46B257172C2A05CC00E05D6D /* Constants.swift in Sources */,
+				46017C8F2C2B7B0E006FF070 /* CardView.swift in Sources */,
 				46B257142C2A03FA00E05D6D /* IntroScreen.swift in Sources */,
 				46B257192C2A096F00E05D6D /* Tab.swift in Sources */,
 				46017C882C2A1816006FF070 /* SettingsView.swift in Sources */,
