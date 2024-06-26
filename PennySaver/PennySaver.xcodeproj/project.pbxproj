@@ -20,6 +20,7 @@
 		46017C912C2BAA5A006FF070 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C902C2BAA5A006FF070 /* TransactionCardView.swift */; };
 		46017C952C2BB29E006FF070 /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C942C2BB29D006FF070 /* SwipeAction.swift */; };
 		46017C972C2BB94F006FF070 /* DateFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C962C2BB94F006FF070 /* DateFilterView.swift */; };
+		46017C992C2C5BBA006FF070 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C982C2C5BBA006FF070 /* LockView.swift */; };
 		46B257012C2A020A00E05D6D /* PennySaverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257002C2A020A00E05D6D /* PennySaverApp.swift */; };
 		46B257072C2A020F00E05D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B257062C2A020F00E05D6D /* Assets.xcassets */; };
 		46B2570A2C2A020F00E05D6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B257092C2A020F00E05D6D /* Preview Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		46017C902C2BAA5A006FF070 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
 		46017C942C2BB29D006FF070 /* SwipeAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
 		46017C962C2BB94F006FF070 /* DateFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilterView.swift; sourceTree = "<group>"; };
+		46017C982C2C5BBA006FF070 /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 		46B256FD2C2A020A00E05D6D /* PennySaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PennySaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B257002C2A020A00E05D6D /* PennySaverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennySaverApp.swift; sourceTree = "<group>"; };
 		46B257062C2A020F00E05D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		46017C8D2C2B7AF3006FF070 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				46017C982C2C5BBA006FF070 /* LockView.swift */,
 				46017C942C2BB29D006FF070 /* SwipeAction.swift */,
 				46017C8E2C2B7B0D006FF070 /* CardView.swift */,
 				46017C902C2BAA5A006FF070 /* TransactionCardView.swift */,
@@ -247,6 +250,7 @@
 				46017C842C2A17FF006FF070 /* SearchView.swift in Sources */,
 				46017C8C2C2B78A4006FF070 /* Date+Extensions.swift in Sources */,
 				46017C8A2C2A1F46006FF070 /* View+Extensions.swift in Sources */,
+				46017C992C2C5BBA006FF070 /* LockView.swift in Sources */,
 				46B257012C2A020A00E05D6D /* PennySaverApp.swift in Sources */,
 				46017C862C2A180D006FF070 /* GraphsView.swift in Sources */,
 				46017C7A2C2A14AA006FF070 /* Category.swift in Sources */,
@@ -387,6 +391,7 @@
 				DEVELOPMENT_TEAM = 3WX9FH8392;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = DESCRIPTION;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -416,6 +421,7 @@
 				DEVELOPMENT_TEAM = 3WX9FH8392;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = DESCRIPTION;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

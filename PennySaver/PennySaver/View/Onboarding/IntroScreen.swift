@@ -34,7 +34,7 @@ struct IntroScreen: View {
             Button(action: {
                 isFirstTime = false
             }, label: {
-                Text("Continue")
+                Text("Continuar")
                     .fontWeight(.bold)
                     .foregroundStyle(.white)
                     .frame(maxWidth: .infinity)
