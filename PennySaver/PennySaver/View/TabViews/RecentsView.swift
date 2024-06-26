@@ -13,6 +13,7 @@ struct RecentsView: View {
     // View Properties
     @State private var startDate: Date = .now.startOfMonth
     @State private var endDate: Date = .now.endOfMonth
+    @State private var showFilterView: Bool = false
     @State private var selectedCategory: Category = .expense
     // For Animation
     @Namespace private var animation
@@ -25,7 +26,9 @@ struct RecentsView: View {
                 ScrollView(.vertical) {
                     LazyVStack(spacing: 10, pinnedViews: [.sectionHeaders]) {
                         Section {
-                            Button(action: {}, label: {
+                            Button(action: {
+                                showFilterView = true
+                            }, label: {
                                 Text("\(format(date: startDate, format: "dd - MM yy")) a \(format(date: endDate, format: "dd - MM yy"))")
                                     .font(.caption2)
                                     .foregroundStyle(.gray)
@@ -37,6 +40,11 @@ struct RecentsView: View {
 
                             // Custom Segmented Control
                             CustomSegmentedControl()
+                                .padding(.bottom, 10)
+
+                            ForEach(sampleTransactions.filter ({ $0.category == selectedCategory.rawValue })) { transaction in
+                                TransactionCardView(transaction: transaction)
+                            }
                         } header: {
                             HeaderView(size)
                         }
@@ -44,7 +52,22 @@ struct RecentsView: View {
                     .padding(15)
                 }
                 .background(.gray.opacity(0.15))
+                .blur(radius: showFilterView ? 8 : 0)
+                .disabled(showFilterView)
             }
+            .overlay {
+                if showFilterView {
+                    DateFilterView(start: startDate, end: endDate, onSubmit: { start, end in
+                        startDate = start
+                        endDate = end
+                        showFilterView = false
+                    }, onClose: {
+                        showFilterView = false
+                    })
+                    .transition(.move(edge: .leading))
+                }
+            }
+            .animation(.snappy, value: showFilterView)
         }
     }
 
