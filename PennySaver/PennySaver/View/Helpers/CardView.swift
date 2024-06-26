@@ -28,7 +28,7 @@ struct CardView: View {
 
                 HStack(spacing: 0) {
                     ForEach(Category.allCases, id: \.rawValue) { category in
-                        let symbolImage = category == .income ? "arrow.down" : "arrow.up"
+                        let symbolImage = category == .income ? "arrow.up" : "arrow.down"
                         let tint = category == .income ? Color.green : Color.red
 
                         HStack(spacing: 10) {
@@ -60,7 +60,7 @@ struct CardView: View {
                 }
             }
             .padding([.horizontal, .bottom], 25)
-            .padding(.top, 15)
+            .padding(.top, 5)
         }
     }
 }
