@@ -24,7 +24,7 @@ struct IntroScreen: View {
 
                 PointView(symbol: "chart.bar.fill", title: "Visual Charts", subTitle: "View your transactions using eye-catching graphic representations.")
 
-                PointView(symbol: "magnifyngglass", title: "Advance Filters", subTitle: "Find the expenses you want by advance search and filtering.")
+                PointView(symbol: "magnifyingglass", title: "Advance Filters", subTitle: "Find the expenses you want by advance search and filtering.")
             })
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.horizontal, 25)

@@ -7,16 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46017C7A2C2A14AA006FF070 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C792C2A14AA006FF070 /* Category.swift */; };
+		46017C7C2C2A14FA006FF070 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C7B2C2A14FA006FF070 /* Transaction.swift */; };
+		46017C7E2C2A15B5006FF070 /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C7D2C2A15B5006FF070 /* TintColor.swift */; };
+		46017C822C2A17F6006FF070 /* RecentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C812C2A17F6006FF070 /* RecentsView.swift */; };
+		46017C842C2A17FF006FF070 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C832C2A17FF006FF070 /* SearchView.swift */; };
+		46017C862C2A180D006FF070 /* GraphsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C852C2A180D006FF070 /* GraphsView.swift */; };
+		46017C882C2A1816006FF070 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C872C2A1816006FF070 /* SettingsView.swift */; };
+		46017C8A2C2A1F46006FF070 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C892C2A1F46006FF070 /* View+Extensions.swift */; };
+		46017C8C2C2B78A4006FF070 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C8B2C2B78A4006FF070 /* Date+Extensions.swift */; };
+		46017C8F2C2B7B0E006FF070 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C8E2C2B7B0D006FF070 /* CardView.swift */; };
+		46017C912C2BAA5A006FF070 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C902C2BAA5A006FF070 /* TransactionCardView.swift */; };
+		46017C952C2BB29E006FF070 /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C942C2BB29D006FF070 /* SwipeAction.swift */; };
+		46017C972C2BB94F006FF070 /* DateFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C962C2BB94F006FF070 /* DateFilterView.swift */; };
 		46B257012C2A020A00E05D6D /* PennySaverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257002C2A020A00E05D6D /* PennySaverApp.swift */; };
 		46B257072C2A020F00E05D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B257062C2A020F00E05D6D /* Assets.xcassets */; };
 		46B2570A2C2A020F00E05D6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B257092C2A020F00E05D6D /* Preview Assets.xcassets */; };
 		46B257142C2A03FA00E05D6D /* IntroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257132C2A03FA00E05D6D /* IntroScreen.swift */; };
 		46B257172C2A05CC00E05D6D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257162C2A05CB00E05D6D /* Constants.swift */; };
 		46B257192C2A096F00E05D6D /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257182C2A096F00E05D6D /* Tab.swift */; };
-		46B2571B2C2A0AC500E05D6D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B2571A2C2A0AC500E05D6D /* HomeView.swift */; };
+		46B2571B2C2A0AC500E05D6D /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B2571A2C2A0AC500E05D6D /* TabsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46017C792C2A14AA006FF070 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		46017C7B2C2A14FA006FF070 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		46017C7D2C2A15B5006FF070 /* TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColor.swift; sourceTree = "<group>"; };
+		46017C812C2A17F6006FF070 /* RecentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsView.swift; sourceTree = "<group>"; };
+		46017C832C2A17FF006FF070 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		46017C852C2A180D006FF070 /* GraphsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsView.swift; sourceTree = "<group>"; };
+		46017C872C2A1816006FF070 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		46017C892C2A1F46006FF070 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		46017C8B2C2B78A4006FF070 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		46017C8E2C2B7B0D006FF070 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		46017C902C2BAA5A006FF070 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
+		46017C942C2BB29D006FF070 /* SwipeAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
+		46017C962C2BB94F006FF070 /* DateFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilterView.swift; sourceTree = "<group>"; };
 		46B256FD2C2A020A00E05D6D /* PennySaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PennySaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B257002C2A020A00E05D6D /* PennySaverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennySaverApp.swift; sourceTree = "<group>"; };
 		46B257062C2A020F00E05D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -24,7 +50,7 @@
 		46B257132C2A03FA00E05D6D /* IntroScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScreen.swift; sourceTree = "<group>"; };
 		46B257162C2A05CB00E05D6D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		46B257182C2A096F00E05D6D /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
-		46B2571A2C2A0AC500E05D6D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		46B2571A2C2A0AC500E05D6D /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +64,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46017C7F2C2A1785006FF070 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				46B2571A2C2A0AC500E05D6D /* TabsView.swift */,
+				46017C812C2A17F6006FF070 /* RecentsView.swift */,
+				46017C832C2A17FF006FF070 /* SearchView.swift */,
+				46017C852C2A180D006FF070 /* GraphsView.swift */,
+				46017C872C2A1816006FF070 /* SettingsView.swift */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
+		46017C802C2A17E1006FF070 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				46B257132C2A03FA00E05D6D /* IntroScreen.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		46017C8D2C2B7AF3006FF070 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				46017C942C2BB29D006FF070 /* SwipeAction.swift */,
+				46017C8E2C2B7B0D006FF070 /* CardView.swift */,
+				46017C902C2BAA5A006FF070 /* TransactionCardView.swift */,
+				46017C962C2BB94F006FF070 /* DateFilterView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		46B256F42C2A020A00E05D6D = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +135,9 @@
 		46B257112C2A03D700E05D6D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				46B257132C2A03FA00E05D6D /* IntroScreen.swift */,
-				46B2571A2C2A0AC500E05D6D /* HomeView.swift */,
+				46017C8D2C2B7AF3006FF070 /* Helpers */,
+				46017C802C2A17E1006FF070 /* Onboarding */,
+				46017C7F2C2A1785006FF070 /* TabViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -88,6 +146,9 @@
 			isa = PBXGroup;
 			children = (
 				46B257182C2A096F00E05D6D /* Tab.swift */,
+				46017C792C2A14AA006FF070 /* Category.swift */,
+				46017C7B2C2A14FA006FF070 /* Transaction.swift */,
+				46017C7D2C2A15B5006FF070 /* TintColor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -96,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				46B257162C2A05CB00E05D6D /* Constants.swift */,
+				46017C892C2A1F46006FF070 /* View+Extensions.swift */,
+				46017C8B2C2B78A4006FF070 /* Date+Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -170,11 +233,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46017C7E2C2A15B5006FF070 /* TintColor.swift in Sources */,
+				46017C822C2A17F6006FF070 /* RecentsView.swift in Sources */,
+				46017C972C2BB94F006FF070 /* DateFilterView.swift in Sources */,
+				46017C7C2C2A14FA006FF070 /* Transaction.swift in Sources */,
 				46B257172C2A05CC00E05D6D /* Constants.swift in Sources */,
+				46017C8F2C2B7B0E006FF070 /* CardView.swift in Sources */,
+				46017C952C2BB29E006FF070 /* SwipeAction.swift in Sources */,
 				46B257142C2A03FA00E05D6D /* IntroScreen.swift in Sources */,
 				46B257192C2A096F00E05D6D /* Tab.swift in Sources */,
-				46B2571B2C2A0AC500E05D6D /* HomeView.swift in Sources */,
+				46017C882C2A1816006FF070 /* SettingsView.swift in Sources */,
+				46B2571B2C2A0AC500E05D6D /* TabsView.swift in Sources */,
+				46017C842C2A17FF006FF070 /* SearchView.swift in Sources */,
+				46017C8C2C2B78A4006FF070 /* Date+Extensions.swift in Sources */,
+				46017C8A2C2A1F46006FF070 /* View+Extensions.swift in Sources */,
 				46B257012C2A020A00E05D6D /* PennySaverApp.swift in Sources */,
+				46017C862C2A180D006FF070 /* GraphsView.swift in Sources */,
+				46017C7A2C2A14AA006FF070 /* Category.swift in Sources */,
+				46017C912C2BAA5A006FF070 /* TransactionCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,26 +7,26 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct TabsView: View {
     /// Intro Visibility Status
     @AppStorage("isFirstTime") private var isFirstTime: Bool = true
     /// Active Tab
     @State private var activeTab: Tab = .recents
     var body: some View {
         TabView(selection: $activeTab) {
-            Text("Recents")
+            RecentsView()
                 .tag(Tab.recents)
                 .tabItem { Tab.recents.tabContent }
 
-            Text("Search")
+            SearchView()
                 .tag(Tab.search)
                 .tabItem { Tab.search.tabContent }
 
-            Text("Charts")
+            GraphsView()
                 .tag(Tab.charts)
                 .tabItem { Tab.charts.tabContent }
 
-            Text("Settings")
+            SettingsView()
                 .tag(Tab.settings)
                 .tabItem { Tab.settings.tabContent }
         }
@@ -39,5 +39,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    TabsView()
 }
