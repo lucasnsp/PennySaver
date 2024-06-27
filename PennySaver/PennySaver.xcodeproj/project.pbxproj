@@ -21,6 +21,7 @@
 		46017C952C2BB29E006FF070 /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C942C2BB29D006FF070 /* SwipeAction.swift */; };
 		46017C972C2BB94F006FF070 /* DateFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C962C2BB94F006FF070 /* DateFilterView.swift */; };
 		46017C992C2C5BBA006FF070 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C982C2C5BBA006FF070 /* LockView.swift */; };
+		46017C9B2C2DB22E006FF070 /* NewExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C9A2C2DB22E006FF070 /* NewExpenseView.swift */; };
 		46B257012C2A020A00E05D6D /* PennySaverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257002C2A020A00E05D6D /* PennySaverApp.swift */; };
 		46B257072C2A020F00E05D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B257062C2A020F00E05D6D /* Assets.xcassets */; };
 		46B2570A2C2A020F00E05D6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B257092C2A020F00E05D6D /* Preview Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		46017C942C2BB29D006FF070 /* SwipeAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
 		46017C962C2BB94F006FF070 /* DateFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilterView.swift; sourceTree = "<group>"; };
 		46017C982C2C5BBA006FF070 /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		46017C9A2C2DB22E006FF070 /* NewExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseView.swift; sourceTree = "<group>"; };
 		46B256FD2C2A020A00E05D6D /* PennySaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PennySaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B257002C2A020A00E05D6D /* PennySaverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennySaverApp.swift; sourceTree = "<group>"; };
 		46B257062C2A020F00E05D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,11 +93,27 @@
 			children = (
 				46017C982C2C5BBA006FF070 /* LockView.swift */,
 				46017C942C2BB29D006FF070 /* SwipeAction.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		46017C9C2C2DBC50006FF070 /* Components */ = {
+			isa = PBXGroup;
+			children = (
 				46017C8E2C2B7B0D006FF070 /* CardView.swift */,
 				46017C902C2BAA5A006FF070 /* TransactionCardView.swift */,
 				46017C962C2BB94F006FF070 /* DateFilterView.swift */,
+				46017C9A2C2DB22E006FF070 /* NewExpenseView.swift */,
 			);
-			path = Helpers;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		46017C9D2C2DBC68006FF070 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				46B257112C2A03D700E05D6D /* View */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 		46B256F42C2A020A00E05D6D = {
@@ -118,9 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				46B257002C2A020A00E05D6D /* PennySaverApp.swift */,
-				46B257152C2A05AC00E05D6D /* Helpers */,
+				46017C9D2C2DBC68006FF070 /* Features */,
 				46B257122C2A03DF00E05D6D /* Model */,
-				46B257112C2A03D700E05D6D /* View */,
+				46B257152C2A05AC00E05D6D /* Helpers */,
 				46B257062C2A020F00E05D6D /* Assets.xcassets */,
 				46B257082C2A020F00E05D6D /* Preview Content */,
 			);
@@ -138,9 +156,10 @@
 		46B257112C2A03D700E05D6D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				46017C8D2C2B7AF3006FF070 /* Helpers */,
 				46017C802C2A17E1006FF070 /* Onboarding */,
 				46017C7F2C2A1785006FF070 /* TabViews */,
+				46017C9C2C2DBC50006FF070 /* Components */,
+				46017C8D2C2B7AF3006FF070 /* Helpers */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -244,6 +263,7 @@
 				46017C8F2C2B7B0E006FF070 /* CardView.swift in Sources */,
 				46017C952C2BB29E006FF070 /* SwipeAction.swift in Sources */,
 				46B257142C2A03FA00E05D6D /* IntroScreen.swift in Sources */,
+				46017C9B2C2DB22E006FF070 /* NewExpenseView.swift in Sources */,
 				46B257192C2A096F00E05D6D /* Tab.swift in Sources */,
 				46017C882C2A1816006FF070 /* SettingsView.swift in Sources */,
 				46B2571B2C2A0AC500E05D6D /* TabsView.swift in Sources */,
