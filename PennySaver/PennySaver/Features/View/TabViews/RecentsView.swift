@@ -90,22 +90,19 @@ struct RecentsView: View {
                     .scaleEffect(headerScale(size, proxy: geometryProxy), anchor: .topLeading)
             }
 
-
             Spacer(minLength: 0)
 
-                .overlay(alignment: .trailing, content: {
-                    NavigationLink {
-
-                    } label: {
-                        Image(systemName: "plus")
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                            .foregroundStyle(.white)
-                            .frame(width: 45, height: 45)
-                            .background(appTint.gradient, in: .circle)
-                            .contentShape(.circle)
-                    }
-                })
+            NavigationLink {
+                NewExpenseView()
+            } label: {
+                Image(systemName: "plus")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.white)
+                    .frame(width: 45, height: 45)
+                    .background(appTint.gradient, in: .circle)
+                    .contentShape(.circle)
+            }
         }
         .padding(.bottom, userName.isEmpty ? 10 : 5)
         .background {

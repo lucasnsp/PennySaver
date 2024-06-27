@@ -32,11 +32,11 @@ struct NewExpenseView: View {
 
                 CustomSection("Titulo", "Magic Keyboard", value: $title)
 
-                CustomSection("Notas","Apple Product!", value: $title)
+                CustomSection("Notas","Apple Product!", value: $remarks)
 
                 // Amount & Category Box
                 VStack(alignment: .leading, spacing: 15, content: {
-                    Text("Valor e categoria")
+                    Text("Valor & categoria")
                         .font(.caption)
                         .foregroundStyle(.gray)
                         .hSpacing(.leading)
@@ -53,22 +53,45 @@ struct NewExpenseView: View {
                         CategoryCheckBox()
                     }
                 })
+
+                // Date Picker
+                VStack(alignment: .leading, spacing: 10, content: {
+                    Text("Date")
+                        .font(.caption)
+                        .foregroundStyle(.gray)
+                        .hSpacing(.leading)
+
+                    DatePicker("", selection: $dateAdded, displayedComponents: [.date])
+                        .datePickerStyle(.graphical)
+                        .padding(.horizontal, 15)
+                        .padding(.vertical, 12)
+                        .background(.background, in: .rect(cornerRadius: 10))
+                })
             }
             .padding(15)
         }
-        .navigationTitle("Adicionar Transação")
+        .navigationTitle("Add Transação")
         .background(.gray.opacity(0.15))
+        .toolbar(content: {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("Salvar", action: save)
+            }
+        })
+    }
+
+    func save() {
+
     }
 
     @ViewBuilder
     func CustomSection(_ title: String, _ hint: String, value: Binding<String>) -> some View {
         VStack(alignment: .leading, spacing: 10, content: {
-            Text("Title")
+            Text(title)
                 .font(.caption)
                 .foregroundStyle(.gray)
                 .hSpacing(.leading)
 
-            TextField(hint, text: $title)
+            TextField(hint, text: value)
                 .padding(.horizontal, 15)
                 .padding(.vertical, 12)
                 .background(.background, in: .rect(cornerRadius: 10))
