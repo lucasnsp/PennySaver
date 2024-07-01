@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NewExpenseView: View {
+struct TransactionView: View {
     // Env Properties
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
@@ -48,13 +48,18 @@ struct NewExpenseView: View {
                         .hSpacing(.leading)
 
                     HStack(spacing: 15) {
-                        TextField("0.0", value: $amount, formatter: numberFormatter)
-                            .padding(.horizontal, 15)
-                            .padding(.vertical, 12)
-                            .background(.background, in: .rect(cornerRadius: 10))
-                            .frame(maxWidth: 130)
-                            .keyboardType(.decimalPad)
+                        HStack(spacing: 4) {
+                            Text(currencySymbol)
+                                .font(.callout.bold())
 
+                            TextField("0.0", value: $amount, formatter: numberFormatter)
+                                .keyboardType(.decimalPad)
+                        }
+                        .padding(.horizontal, 15)
+                        .padding(.vertical, 12)
+                        .background(.background, in: .rect(cornerRadius: 10))
+                        .frame(maxWidth: 130)
+                        
                         // Custom Check Box
                         CategoryCheckBox()
                     }
@@ -62,7 +67,7 @@ struct NewExpenseView: View {
 
                 // Date Picker
                 VStack(alignment: .leading, spacing: 10, content: {
-                    Text("Date")
+                    Text("Data")
                         .font(.caption)
                         .foregroundStyle(.gray)
                         .hSpacing(.leading)
@@ -76,7 +81,7 @@ struct NewExpenseView: View {
             }
             .padding(15)
         }
-        .navigationTitle("Add Transação")
+        .navigationTitle("\(editTransaction == nil ? "Add" : "Editar") Transação")
         .background(.gray.opacity(0.15))
         .toolbar(content: {
             ToolbarItem(placement: .topBarTrailing) {
@@ -179,6 +184,6 @@ struct NewExpenseView: View {
 
 #Preview {
     NavigationStack {
-        NewExpenseView()
+        TransactionView()
     }
 }
