@@ -14,5 +14,6 @@ struct PennySaverApp: App {
         WindowGroup {
             TabsView()
         }
+        .modelContainer(for: [Transaction.self])
     }
 }

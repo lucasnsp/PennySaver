@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct NewExpenseView: View {
+    // Env Properties
+    @Environment(\.modelContext) private var context
+    @Environment(\.dismiss) private var dismiss
+    var editTransaction: Transaction? 
+    // View Properties
     @State private var title: String = ""
     @State private var remarks: String = ""
     @State private var amount: Double = .zero
     @State private var dateAdded: Date = .now
     @State private var category: Category = .expense
-    var tint: TintColor = tints.randomElement()!
+    // Random Tint
+    @State var tint: TintColor = tints.randomElement()!
     var body: some View {
         ScrollView(.vertical) {
             VStack(spacing: 15) {
@@ -77,10 +83,41 @@ struct NewExpenseView: View {
                 Button("Salvar", action: save)
             }
         })
+        .onAppear(perform: {
+            if let editTransaction {
+                // Load all existing data from the transaction
+                title = editTransaction.title
+                remarks = editTransaction.remarks
+                dateAdded = editTransaction.dateAdded
+
+                if let category = editTransaction.rawCategory {
+                    self.category = category
+                }
+                amount = editTransaction.amount
+
+                if let tint  = editTransaction.tint {
+                    self.tint = tint
+                }
+            }
+        })
     }
 
     func save() {
+        if editTransaction != nil {
+            editTransaction?.title = title
+            editTransaction?.remarks = remarks
+            editTransaction?.amount = amount
+            editTransaction?.category = category.rawValue
+            editTransaction?.dateAdded = dateAdded
+        } else {
+            let transaction = Transaction(
+                title: title, remarks: remarks,
+                amount: amount, dateAdded: dateAdded,
+                category: category, tintColor: tint)
+            context.insert(transaction)
+        }
 
+        dismiss()
     }
 
     @ViewBuilder
