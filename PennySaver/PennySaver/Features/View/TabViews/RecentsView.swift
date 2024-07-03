@@ -29,7 +29,7 @@ struct RecentsView: View {
                             Button(action: {
                                 showFilterView = true
                             }, label: {
-                                Text("\(format(date: startDate, format: "dd - MM yy")) a \(format(date: endDate, format: "dd - MM yy"))")
+                                Text("\(format(date: startDate, format: "(dd/MM/yy)")) a \(format(date: endDate, format: "(dd/MM/yy)"))")
                                     .font(.caption2)
                                     .foregroundStyle(.gray)
                             })
