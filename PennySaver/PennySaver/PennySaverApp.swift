@@ -7,12 +7,16 @@
 
 import SwiftUI
 import SwiftData
+import WidgetKit
 
 @main
 struct PennySaverApp: App {
     var body: some Scene {
         WindowGroup {
             TabsView()
+                .onAppear {
+                    WidgetCenter.shared.reloadAllTimelines()
+                }
         }
         .modelContainer(for: [Transaction.self])
     }
