@@ -58,8 +58,8 @@ struct StatsCardView: Widget {
         }
         .supportedFamilies([.systemMedium])
         .contentMarginsDisabled()
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Controle suas finanças")
+        .description("Visualize seus gastos de forma prática.")
     }
 }
 
