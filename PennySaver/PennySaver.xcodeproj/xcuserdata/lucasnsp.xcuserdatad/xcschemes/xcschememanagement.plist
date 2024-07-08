@@ -7,7 +7,25 @@
 		<key>PennySaver.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>StatsCardViewExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4690609A2C3C7C9000306FEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>46B256FC2C2A020A00E05D6D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
