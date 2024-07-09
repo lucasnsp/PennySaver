@@ -41,6 +41,10 @@
 		469060BD2C3C97AD00306FEA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 469060BC2C3C97AD00306FEA /* Lottie */; };
 		469060C22C3C98AE00306FEA /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257182C2A096F00E05D6D /* Tab.swift */; };
 		469060C52C3C993D00306FEA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469060C42C3C993D00306FEA /* DataManager.swift */; };
+		469060C92C3DEFCF00306FEA /* track_expenses.json in Resources */ = {isa = PBXBuildFile; fileRef = 469060C62C3DEFCD00306FEA /* track_expenses.json */; };
+		469060CA2C3DEFCF00306FEA /* graphs_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 469060C72C3DEFCE00306FEA /* graphs_animation.json */; };
+		469060CB2C3DEFCF00306FEA /* security_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 469060C82C3DEFCF00306FEA /* security_animation.json */; };
+		469060CD2C3DF00300306FEA /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469060CC2C3DF00300306FEA /* OnboardingItem.swift */; };
 		46B257012C2A020A00E05D6D /* PennySaverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257002C2A020A00E05D6D /* PennySaverApp.swift */; };
 		46B257072C2A020F00E05D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B257062C2A020F00E05D6D /* Assets.xcassets */; };
 		46B2570A2C2A020F00E05D6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B257092C2A020F00E05D6D /* Preview Assets.xcassets */; };
@@ -102,6 +106,10 @@
 		469060B82C3C808200306FEA /* PennySaver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PennySaver.entitlements; sourceTree = "<group>"; };
 		469060B92C3C80C700306FEA /* StatsCardViewExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StatsCardViewExtension.entitlements; sourceTree = "<group>"; };
 		469060C42C3C993D00306FEA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		469060C62C3DEFCD00306FEA /* track_expenses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = track_expenses.json; sourceTree = "<group>"; };
+		469060C72C3DEFCE00306FEA /* graphs_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = graphs_animation.json; sourceTree = "<group>"; };
+		469060C82C3DEFCF00306FEA /* security_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = security_animation.json; sourceTree = "<group>"; };
+		469060CC2C3DF00300306FEA /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
 		46B256FD2C2A020A00E05D6D /* PennySaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PennySaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B257002C2A020A00E05D6D /* PennySaverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennySaverApp.swift; sourceTree = "<group>"; };
 		46B257062C2A020F00E05D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -224,6 +232,9 @@
 		469060C12C3C988F00306FEA /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
+				469060C72C3DEFCE00306FEA /* graphs_animation.json */,
+				469060C82C3DEFCF00306FEA /* security_animation.json */,
+				469060C62C3DEFCD00306FEA /* track_expenses.json */,
 			);
 			path = Lottie;
 			sourceTree = "<group>";
@@ -297,6 +308,7 @@
 				46017C792C2A14AA006FF070 /* Category.swift */,
 				46017C7B2C2A14FA006FF070 /* Transaction.swift */,
 				469060952C35A73400306FEA /* ChartModel.swift */,
+				469060CC2C3DF00300306FEA /* OnboardingItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -406,7 +418,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				46B2570A2C2A020F00E05D6D /* Preview Assets.xcassets in Resources */,
+				469060CA2C3DEFCF00306FEA /* graphs_animation.json in Resources */,
 				46B257072C2A020F00E05D6D /* Assets.xcassets in Resources */,
+				469060C92C3DEFCF00306FEA /* track_expenses.json in Resources */,
+				469060CB2C3DEFCF00306FEA /* security_animation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +467,7 @@
 				46B2571B2C2A0AC500E05D6D /* TabsView.swift in Sources */,
 				46017C842C2A17FF006FF070 /* SearchView.swift in Sources */,
 				46017C8C2C2B78A4006FF070 /* Date+Extensions.swift in Sources */,
+				469060CD2C3DF00300306FEA /* OnboardingItem.swift in Sources */,
 				46017C8A2C2A1F46006FF070 /* View+Extensions.swift in Sources */,
 				46017C992C2C5BBA006FF070 /* LockView.swift in Sources */,
 				46B257012C2A020A00E05D6D /* PennySaverApp.swift in Sources */,
