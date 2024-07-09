@@ -38,6 +38,9 @@
 		469060B52C3C7F9900306FEA /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C7B2C2A14FA006FF070 /* Transaction.swift */; };
 		469060B62C3C7FF900306FEA /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46017C7D2C2A15B5006FF070 /* TintColor.swift */; };
 		469060B72C3C801600306FEA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257162C2A05CB00E05D6D /* Constants.swift */; };
+		469060BD2C3C97AD00306FEA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 469060BC2C3C97AD00306FEA /* Lottie */; };
+		469060C22C3C98AE00306FEA /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257182C2A096F00E05D6D /* Tab.swift */; };
+		469060C52C3C993D00306FEA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469060C42C3C993D00306FEA /* DataManager.swift */; };
 		46B257012C2A020A00E05D6D /* PennySaverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B257002C2A020A00E05D6D /* PennySaverApp.swift */; };
 		46B257072C2A020F00E05D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B257062C2A020F00E05D6D /* Assets.xcassets */; };
 		46B2570A2C2A020F00E05D6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B257092C2A020F00E05D6D /* Preview Assets.xcassets */; };
@@ -98,6 +101,7 @@
 		469060A82C3C7C9400306FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		469060B82C3C808200306FEA /* PennySaver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PennySaver.entitlements; sourceTree = "<group>"; };
 		469060B92C3C80C700306FEA /* StatsCardViewExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StatsCardViewExtension.entitlements; sourceTree = "<group>"; };
+		469060C42C3C993D00306FEA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		46B256FD2C2A020A00E05D6D /* PennySaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PennySaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B257002C2A020A00E05D6D /* PennySaverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennySaverApp.swift; sourceTree = "<group>"; };
 		46B257062C2A020F00E05D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469060BD2C3C97AD00306FEA /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +202,40 @@
 			path = StatsCardView;
 			sourceTree = "<group>";
 		};
+		469060BE2C3C986100306FEA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				46B257002C2A020A00E05D6D /* PennySaverApp.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		469060C02C3C988100306FEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46B257162C2A05CB00E05D6D /* Constants.swift */,
+				46B257182C2A096F00E05D6D /* Tab.swift */,
+				46017C7D2C2A15B5006FF070 /* TintColor.swift */,
+				469060C12C3C988F00306FEA /* Lottie */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		469060C12C3C988F00306FEA /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		469060C32C3C992200306FEA /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				469060C42C3C993D00306FEA /* DataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
 		46B256F42C2A020A00E05D6D = {
 			isa = PBXGroup;
 			children = (
@@ -221,8 +260,10 @@
 			isa = PBXGroup;
 			children = (
 				469060B82C3C808200306FEA /* PennySaver.entitlements */,
-				46B257002C2A020A00E05D6D /* PennySaverApp.swift */,
+				469060BE2C3C986100306FEA /* Source */,
+				469060C02C3C988100306FEA /* Resources */,
 				46017C9D2C2DBC68006FF070 /* Features */,
+				469060C32C3C992200306FEA /* DataManager */,
 				46B257122C2A03DF00E05D6D /* Model */,
 				46B257152C2A05AC00E05D6D /* Helpers */,
 				46B257062C2A020F00E05D6D /* Assets.xcassets */,
@@ -253,10 +294,8 @@
 		46B257122C2A03DF00E05D6D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				46B257182C2A096F00E05D6D /* Tab.swift */,
 				46017C792C2A14AA006FF070 /* Category.swift */,
 				46017C7B2C2A14FA006FF070 /* Transaction.swift */,
-				46017C7D2C2A15B5006FF070 /* TintColor.swift */,
 				469060952C35A73400306FEA /* ChartModel.swift */,
 			);
 			path = Model;
@@ -265,7 +304,6 @@
 		46B257152C2A05AC00E05D6D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				46B257162C2A05CB00E05D6D /* Constants.swift */,
 				46017C892C2A1F46006FF070 /* View+Extensions.swift */,
 				46017C8B2C2B78A4006FF070 /* Date+Extensions.swift */,
 			);
@@ -307,6 +345,9 @@
 				469060AA2C3C7C9400306FEA /* PBXTargetDependency */,
 			);
 			name = PennySaver;
+			packageProductDependencies = (
+				469060BC2C3C97AD00306FEA /* Lottie */,
+			);
 			productName = PennySaver;
 			productReference = 46B256FD2C2A020A00E05D6D /* PennySaver.app */;
 			productType = "com.apple.product-type.application";
@@ -338,6 +379,9 @@
 				Base,
 			);
 			mainGroup = 46B256F42C2A020A00E05D6D;
+			packageReferences = (
+				469060BB2C3C97AD00306FEA /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 46B256FE2C2A020A00E05D6D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -378,6 +422,7 @@
 				469060B52C3C7F9900306FEA /* Transaction.swift in Sources */,
 				469060A32C3C7C9000306FEA /* StatsCardViewBundle.swift in Sources */,
 				469060B22C3C7E6B00306FEA /* View+Extensions.swift in Sources */,
+				469060C22C3C98AE00306FEA /* Tab.swift in Sources */,
 				469060B72C3C801600306FEA /* Constants.swift in Sources */,
 				469060B32C3C7EAF00306FEA /* CardView.swift in Sources */,
 				469060B02C3C7E3800306FEA /* FilterTransactionView.swift in Sources */,
@@ -395,6 +440,7 @@
 				469060942C32394700306FEA /* FilterTransactionView.swift in Sources */,
 				46017C972C2BB94F006FF070 /* DateFilterView.swift in Sources */,
 				46017C7C2C2A14FA006FF070 /* Transaction.swift in Sources */,
+				469060C52C3C993D00306FEA /* DataManager.swift in Sources */,
 				46B257172C2A05CC00E05D6D /* Constants.swift in Sources */,
 				46017C8F2C2B7B0E006FF070 /* CardView.swift in Sources */,
 				46017C952C2BB29E006FF070 /* SwipeAction.swift in Sources */,
@@ -702,6 +748,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		469060BB2C3C97AD00306FEA /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		469060BC2C3C97AD00306FEA /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 469060BB2C3C97AD00306FEA /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 46B256F52C2A020A00E05D6D /* Project object */;
 }
