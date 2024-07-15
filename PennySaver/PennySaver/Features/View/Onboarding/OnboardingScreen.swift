@@ -22,6 +22,7 @@ struct OnboardingScreen: View {
     ]
 
     // MARK: Current Slide Index
+    @AppStorage("isFirstTime") private var isFirstTime: Bool = true
     @State var currentIndex: Int = 0
     var body: some View {
         GeometryReader{
@@ -80,7 +81,7 @@ struct OnboardingScreen: View {
                                         // MARK: Playing Next Animation from Start
                                         playAnimation()
                                     } else {
-                                        print("DO LOGIN ACTION")
+                                        isFirstTime = false
                                     }
                                 }
 

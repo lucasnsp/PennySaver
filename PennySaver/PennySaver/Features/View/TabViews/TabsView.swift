@@ -35,7 +35,7 @@ struct TabsView: View {
                     .tabItem { Tab.settings.tabContent }
             }
             .tint(appTint)
-            .sheet(isPresented: $isFirstTime, content: {
+            .fullScreenCover(isPresented: $isFirstTime, content: {
                 OnboardingScreen()
                     .interactiveDismissDisabled()
             })
