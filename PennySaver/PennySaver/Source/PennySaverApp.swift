@@ -11,9 +11,11 @@ import WidgetKit
 
 @main
 struct PennySaverApp: App {
+    @StateObject private var manager = DataManager()
     var body: some Scene {
         WindowGroup {
             TabsView()
+                .environmentObject(manager)
                 .onAppear {
                     WidgetCenter.shared.reloadAllTimelines()
                 }

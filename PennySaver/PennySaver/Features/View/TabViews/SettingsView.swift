@@ -8,23 +8,19 @@
 import SwiftUI
 
 struct SettingsView: View {
-    // User Properties
-    @AppStorage("userName") private var userName: String = ""
-    // App Lock Properties
-    @AppStorage("isAppLockEnabled") private var isAppLockEnabled: Bool = false
-    @AppStorage("lockWhenAppGoesBackground") private var lockWhenAppGoesBackground: Bool = false
+    @EnvironmentObject var manager: DataManager
     var body: some View {
         NavigationStack {
             List {
                 Section("Usuário") {
-                    TextField("iJustine", text: $userName)
+                    TextField("iJustine", text: $manager.userName)
                 }
 
                 Section("App lock") {
-                    Toggle("Enable Lock", isOn: $isAppLockEnabled)
+                    Toggle("Enable Lock", isOn: $manager.isAppLockEnabled)
 
-                    if isAppLockEnabled {
-                        Toggle("Lock When App Goes Background", isOn: $lockWhenAppGoesBackground)
+                    if manager.isAppLockEnabled {
+                        Toggle("Lock When App Goes Background", isOn: $manager.lockWhenAppGoesBackground)
                     }
                 }
             }

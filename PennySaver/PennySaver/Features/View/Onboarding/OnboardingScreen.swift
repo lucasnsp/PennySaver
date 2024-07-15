@@ -8,24 +8,12 @@
 import SwiftUI
 
 struct OnboardingScreen: View {
-    // MARK: OnBoarding Slides Model Data
-    @State var onboardingItems: [OnboardingItem] = [
-        .init(title: "Organize Sua Vida Financeira",
-              subTitle: "Nosso aplicativo permite gerenciar suas receitas e despesas de forma simples e eficiente. Ideal para experts e iniciantes, ele oferece a estrutura e a facilidade necessárias para atingir seus objetivos financeiros.",
-              lottieView: .init(name: "track2",bundle: .main)),
-        .init(title: "Controle Suas Finanças com Facilidade",
-              subTitle: "Utilize nosso gráfico interativo para acompanhar receitas e despesas, filtrando gastos antigos para uma análise clara e eficiente. Oferecemos a transparência e o controle que você precisa para gerenciar suas finanças com confiança.",
-              lottieView: .init(name: "graphs",bundle: .main)),
-        .init(title: "Segurança e Privacidade Garantidas",
-              subTitle: "Nosso aplicativo protege suas finanças com a segurança do Face ID da Apple, garantindo que apenas você tenha acesso às suas informações.",
-              lottieView: .init(name: "faceid",bundle: .main))
-    ]
-
     // MARK: Current Slide Index
-    @AppStorage("isFirstTime") private var isFirstTime: Bool = true
+    @State private var onboardingItems: [OnboardingItem] = OnboardingData.items
+    @EnvironmentObject var manager: DataManager
     @State var currentIndex: Int = 0
     var body: some View {
-        GeometryReader{
+        GeometryReader {
             let size = $0.size
 
             TabView(selection: $currentIndex) {
@@ -81,7 +69,7 @@ struct OnboardingScreen: View {
                                         // MARK: Playing Next Animation from Start
                                         playAnimation()
                                     } else {
-                                        isFirstTime = false
+                                        manager.isFirstTime = false
                                     }
                                 }
 
