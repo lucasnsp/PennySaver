@@ -36,7 +36,7 @@ struct TabsView: View {
             }
             .tint(appTint)
             .sheet(isPresented: $isFirstTime, content: {
-                IntroScreen()
+                OnboardingScreen()
                     .interactiveDismissDisabled()
             })
         }
