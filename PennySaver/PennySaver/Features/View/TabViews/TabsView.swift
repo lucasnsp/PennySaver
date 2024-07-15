@@ -8,15 +8,10 @@
 import SwiftUI
 
 struct TabsView: View {
-    /// Intro Visibility Status
-    @AppStorage("isFirstTime") private var isFirstTime: Bool = true
-    // App Lock Properties
-    @AppStorage("isAppLockEnabled") private var isAppLockEnabled: Bool = false
-    @AppStorage("lockWhenAppGoesBackground") private var lockWhenAppGoesBackground: Bool = false
-    /// Active Tab
+    @EnvironmentObject var manager: DataManager
     @State private var activeTab: Tab = .recents
     var body: some View {
-        LockView(lockType: .biometric, lockPin: "", isEnabled: isAppLockEnabled, lockWhenAppGoesBackground: lockWhenAppGoesBackground) {
+        LockView(lockType: .biometric, lockPin: "", isEnabled: manager.isAppLockEnabled, lockWhenAppGoesBackground: manager.lockWhenAppGoesBackground) {
             TabView(selection: $activeTab) {
                 RecentsView()
                     .tag(Tab.recents)
@@ -35,8 +30,8 @@ struct TabsView: View {
                     .tabItem { Tab.settings.tabContent }
             }
             .tint(appTint)
-            .sheet(isPresented: $isFirstTime, content: {
-                IntroScreen()
+            .fullScreenCover(isPresented: $manager.isFirstTime, content: {
+                OnboardingScreen()
                     .interactiveDismissDisabled()
             })
         }
