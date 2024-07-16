@@ -7,4 +7,4 @@
 
 import SwiftUI
 
-let appTint: Color = .purple
+let appTint: Color = Color("Northwestern Purple")

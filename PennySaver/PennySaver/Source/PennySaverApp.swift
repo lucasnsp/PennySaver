@@ -15,6 +15,7 @@ struct PennySaverApp: App {
     var body: some Scene {
         WindowGroup {
             TabsView()
+                .preferredColorScheme(manager.colorScheme)
                 .environmentObject(manager)
                 .onAppear {
                     WidgetCenter.shared.reloadAllTimelines()

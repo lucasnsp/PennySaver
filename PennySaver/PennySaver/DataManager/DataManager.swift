@@ -14,6 +14,13 @@ final class DataManager: NSObject, ObservableObject {
     // App Lock Properties
     @AppStorage("isAppLockEnabled") var isAppLockEnabled: Bool = false
     @AppStorage("lockWhenAppGoesBackground") var lockWhenAppGoesBackground: Bool = false
+    @AppStorage("ColorScheme") var isDarkMode: Bool = false
+
+    var colorScheme: ColorScheme {
+        get {
+            isDarkMode ? .dark : .light
+        }
+    }
 
     // MARK: Onboarding:
 
