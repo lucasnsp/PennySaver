@@ -30,10 +30,6 @@ struct TabsView: View {
                     .tabItem { Tab.settings.tabContent }
             }
             .tint(appTint)
-            .fullScreenCover(isPresented: $manager.isFirstTime, content: {
-                OnboardingScreen()
-                    .interactiveDismissDisabled()
-            })
         }
     }
 }

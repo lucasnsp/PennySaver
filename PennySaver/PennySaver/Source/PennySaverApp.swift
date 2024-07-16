@@ -14,12 +14,19 @@ struct PennySaverApp: App {
     @StateObject private var manager = DataManager()
     var body: some Scene {
         WindowGroup {
-            TabsView()
-                .preferredColorScheme(manager.colorScheme)
-                .environmentObject(manager)
-                .onAppear {
-                    WidgetCenter.shared.reloadAllTimelines()
-                }
+            if manager.isFirstTime {
+                OnboardingScreen()
+                    .environmentObject(manager)
+                    .preferredColorScheme(manager.colorScheme)
+            } else {
+                TabsView()
+                    .preferredColorScheme(manager.colorScheme)
+                    .environmentObject(manager)
+                    .onAppear {
+                        WidgetCenter.shared.reloadAllTimelines()
+                    }
+
+            }
         }
         .modelContainer(for: [Transaction.self])
     }
