@@ -11,6 +11,7 @@ enum Tab: String {
     case recents = "Recentes"
     case search = "Busca"
     case charts = "Dados"
+    case learn = "Aprenda"
     case settings = "Configurações"
 
     @ViewBuilder
@@ -24,6 +25,9 @@ enum Tab: String {
             Text(self.rawValue)
         case .charts:
             Image(systemName: "chart.bar.xaxis")
+            Text(self.rawValue)
+        case .learn:
+            Image(systemName: "graduationcap")
             Text(self.rawValue)
         case .settings:
             Image(systemName: "gearshape")

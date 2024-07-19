@@ -25,6 +25,10 @@ struct TabsView: View {
                     .tag(Tab.charts)
                     .tabItem { Tab.charts.tabContent }
 
+                LearnView()
+                    .tag(Tab.learn)
+                    .tabItem { Tab.learn.tabContent }
+
                 SettingsView()
                     .tag(Tab.settings)
                     .tabItem { Tab.settings.tabContent }
